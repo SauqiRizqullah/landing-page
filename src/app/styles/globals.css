@@ -30,3 +30,7 @@ body {
 .roboto{
   font-family: var(--font-roboto), sans-serif;
 }
+
+.poppins {
+  font-family: var(--font-poppins), sans-serif;
+}

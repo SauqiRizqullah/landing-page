@@ -1,7 +1,9 @@
 import { Geist, Geist_Mono } from "next/font/google";
-import { Roboto } from "next/font/google";
+import { Roboto, Poppins } from "next/font/google";
 import "./styles/globals.css";
 import Navbar from "./components/Navbar";
+import Sidebar from "./components/Sidebar";
+import Footer from "./components/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -24,14 +26,22 @@ const roboto = Roboto({
   variable: "--font-roboto"
 })
 
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  variable: "--font-poppins",
+})
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${roboto.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${roboto.variable} ${poppins.variable} antialiased`}
       >
+        <Sidebar />
         <Navbar/>
         {children}
+        <Footer/>
       </body>
     </html>
   );
