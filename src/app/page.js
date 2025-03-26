@@ -1,6 +1,16 @@
+"use client"
 import Image from "next/image";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 export default function Home() {
+
+  useEffect(() => {
+    AOS.init({ duration: 800, once: false })
+    
+  }, [])
+
   return (
     <main>
       <div className="bg-blue-custom pt-20 text-slate-50 lg:text-4xl md:text-3xl text-2xl roboto text-center pb-4 font-semibold">
@@ -17,11 +27,11 @@ export default function Home() {
         />
       </div>
 
-      <div className="text-blue-900 md:text-2xl text-xl roboto font-semibold text-center md:mt-28 mt-32">
+      <div className="text-blue-900 md:text-2xl text-xl roboto font-semibold text-center md:mt-28 mt-32" data-aos="fade-up">
         <span>Our Secret Weapon</span>
       </div>
 
-      <div className="mt-12 lg:grid hidden grid-cols-5">
+      <div className="mt-12 lg:grid hidden grid-cols-5" data-aos="fade-up">
         {/* Kiri */}
         <div className="col-span-2 flex flex-col mr-5">
           <div className="mt-5">
@@ -120,11 +130,12 @@ export default function Home() {
       </div>
 
       {/* Pro's mobile / tablet section */}
-      <div className="justify-self-center lg:hidden md:mt-6 mt-16 mx-5">
+      <div className="justify-self-center lg:hidden md:mt-6 mt-16 mx-5" data-aos="fade-up">
         <Image src="/img/plus.png" alt="plus" width={220} height={220} />
       </div>
 
       {/* 4 Points table*/}
+      <div data-aos="fade-up">
       <div className="grid grid-cols-2 gap-10 lg:hidden md:mt-6 mt-18">
         {/* Kiri */}
         <div className="flex flex-col">
@@ -222,13 +233,15 @@ export default function Home() {
           </div>
         </div>
       </div>
+      </div>
+      
 
-      <div className="text-blue-900 md:text-2xl text-xl roboto font-semibold text-center md:mt-28 mt-32">
+      <div className="text-blue-900 md:text-2xl text-xl roboto font-semibold text-center md:mt-28 mt-32" data-aos="fade-up" >
         <span>Our Clients Reviews</span>
       </div>
 
       {/* Card */}
-      <div className="md:mt-12 mt-20 flex lg:justify-center items-center lg:flex-row flex-col mb-10 lg:gap-10 md:gap-8 gap-16 mx-5">
+      <div className="md:mt-12 mt-20 flex lg:justify-center items-center lg:flex-row flex-col mb-10 lg:gap-10 md:gap-8 gap-16 mx-5" data-aos="fade-up" >
         {/* Review */}
         <div className="outline-2 outline-offset-2 outline-gray-500/40 rounded-lg w-100 md:w-140 lg:w-72 lg:h-80 h-auto">
           {/* Konten Review Card */}
