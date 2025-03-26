@@ -109,8 +109,8 @@ export default function Home() {
             <div className="flex flex-row gap-4 justify-self-start">
 
               <Image
-                src="/img/target.png"
-                alt="target"
+                src="/img/sensor.png"
+                alt="sensor"
                 width={30}
                 height={30}
               />
@@ -127,6 +127,45 @@ export default function Home() {
             </div>
           </div>
         </div>
+      </div>
+      {/* Card */}
+      <div className="mt-20 flex justify-center mb-10">
+          <div className="outline-2 outline-offset-2 outline-gray-500/40 rounded-lg w-72">
+            {/* Konten Review Card */}
+            <div className="flex flex-col mt-3">
+                <div className="self-center">
+                  <Image src="/img/reviewer-1.png" alt="reviewer-1" width={60} height={60} className="rounded-full outline-2 outline-offset-2 outline-blue-900"/>
+                </div>
+                <div className="self-center pt-5">
+                  <Image src="/img/double-quotes.png" alt="double-quotes" width={20} height={20} className="rotate-180"/>
+                </div>
+                <div className="text-gray-600/70 roboto font-semibold text-xs mt-3 mx-4 text-center">
+                  <span>
+                  Sebagai surveyor, akurasi adalah segalanya. 
+                  Dengan RTK yang presisi hingga tingkat sentimeter, saya bisa mengumpulkan data topografi tanpa perlu koreksi manual yang memakan waktu. 
+                  Hasilnya? Pekerjaan lebih cepat dan efisien!
+                  </span>
+                </div>
+
+                {/* Bintang */}
+                <div className="flex justify-center gap-4 mt-3">
+                    <Image src="/img/star.png" alt="star" width={15} height={15}/>
+                    <Image src="/img/star.png" alt="star" width={15} height={15}/>
+                    <Image src="/img/star.png" alt="star" width={15} height={15}/>
+                    <Image src="/img/star.png" alt="star" width={15} height={15}/>
+                    <Image src="/img/star.png" alt="star" width={15} height={15}/>
+                </div>
+
+                <div className="roboto text-blue-custom font-semibold self-center text-sm mt-4">
+                    <span>Sauqi Rizqullah</span>
+                </div>
+
+                <div className="text-gray-600/70 roboto font-semibold text-xs mt-1 mx-4 text-center mb-2">
+                    <span>Surveyor Lapangan</span>
+                </div>
+            </div>
+
+          </div>
       </div>
     </main>
   );
