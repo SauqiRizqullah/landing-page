@@ -77,12 +77,12 @@ export default function Home() {
           </div>
         </div>
         {/* Tengah*/}
-        <div className="ml-5">
-          <Image src="/img/plus.png" alt="plus" width={200} height={200} />
+        <div className="">
+          <Image src="/img/plus.png" alt="plus" width={220} height={220} />
         </div>
         {/* Kanan */}
         
-        <div className="col-span-2 flex flex-col">
+        <div className="col-span-2 flex flex-col ml-5">
           
           <div className="mt-5">
             <div className="flex flex-row gap-4">
@@ -133,7 +133,7 @@ export default function Home() {
             <span>Our Clients Reviews</span>
       </div>
       {/* Card */}
-      <div className="mt-12 flex justify-center mb-10 gap-4 mx-5">
+      <div className="mt-12 flex lg:justify-center items-center lg:flex-row flex-col mb-10 lg:gap-4 gap-8 mx-5">
         {/* Review */}
           <div className="outline-2 outline-offset-2 outline-gray-500/40 rounded-lg w-72">
             {/* Konten Review Card */}
@@ -177,7 +177,7 @@ export default function Home() {
             {/* Konten Review Card */}
             <div className="flex flex-col mt-3">
                 <div className="self-center">
-                  <Image src="/img/reviewer-1.png" alt="reviewer-1" width={60} height={60} className="rounded-full outline-2 outline-offset-2 outline-blue-900"/>
+                  <Image src="/img/reviewer-2.png" alt="reviewer-2" width={60} height={60} className="rounded-full outline-2 outline-offset-2 outline-blue-900"/>
                 </div>
                 <div className="self-center pt-5">
                   <Image src="/img/double-quotes.png" alt="double-quotes" width={20} height={20} className="rotate-180"/>
@@ -215,7 +215,7 @@ export default function Home() {
             {/* Konten Review Card */}
             <div className="flex flex-col mt-3">
                 <div className="self-center">
-                  <Image src="/img/reviewer-1.png" alt="reviewer-1" width={60} height={60} className="rounded-full outline-2 outline-offset-2 outline-blue-900"/>
+                  <Image src="/img/reviewer-3.png" alt="reviewer-3" width={60} height={60} className="rounded-full outline-2 outline-offset-2 outline-blue-900"/>
                 </div>
                 <div className="self-center pt-5">
                   <Image src="/img/double-quotes.png" alt="double-quotes" width={20} height={20} className="rotate-180"/>
