@@ -4,7 +4,7 @@ export default function Navbar(){
     return (
         <navbar>
             <div className="flex justify-around bg-blue-custom pt-2 pb-1">
-                <div className="roboto text-slate-50">
+                <div className="roboto text-slate-50 ml-4">
                     <span>TeraFlow</span>
                 </div>
                 <div className="roboto flex justify-around gap-7 text-xs">
